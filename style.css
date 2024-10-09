@@ -1,0 +1,164 @@
+/* Apply general styles to remove default margin and set global background and font for the page */
+body {
+  margin: 5px;
+  background-color: rgb(19, 18, 18); /* Dark background color */
+  font-family: Arial, Helvetica, sans-serif; /* Set font style */
+  display: flex; /* Center align elements */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+/* Styling for the form container, including padding, background, and layout */
+.form-container {
+  padding: 20px; /* Add padding inside the form container */
+  background-color: black; /* Set black background */
+  border: none; /* Remove default borders */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Apply shadow around the form container */
+  display: flex; /* Flexbox layout */
+  justify-content: space-around; /* Space content evenly */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center items */
+  height: auto; 
+  width: 90%; 
+  max-width: 400px; /* Maximum width for larger screens */
+  border-radius: 20px; /* Round the corners */
+}
+
+/* Styling for the header in the form container */
+.form-container header {
+  text-align: center; /* Center align header text */
+  color: whitesmoke; /* Light text color */
+  font-family: monospace; /* Monospace font */
+  font-weight: 900; /* Bold font */
+  margin: 0 0 10px 0; /* Add margin below the header */
+  font-size: 2.8em; /* Set large font size */
+  width: 80%; /* Limit width */
+}
+
+/* Styling for the text input field */
+.form-container input[type="text"] {
+  background-color: rgb(44, 44, 44); /* Dark background color */
+  font-family: 'Times New Roman', Times, serif; /* Set text style */
+  font-size: 1.5em; /* Larger font size */
+  border: 2px solid rgb(44, 44, 44); /* Border matching background */
+  padding: 7px; /* Add padding inside input */
+  width: 100%; /* Take full width */
+  margin: 0 0 10px 0; /* Margin below the input */
+  border-radius: 10px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
+  color: white; /* White text */
+}
+
+/* Change border color on input focus */
+.form-container input[type="text"]:focus {
+  border-color: white; /* White border when focused */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Styling for the "Add" button */
+.form-container button {
+  padding: 10px; /* Add padding inside button */
+  width: 100px; /* Fixed width */
+  background-color: rgb(0, 0, 0); /* Black background */
+  border: none; /* Remove borders */
+  font-family: monospace; /* Monospace font */
+  font-size: 1.8em; /* Set font size */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for button */
+.form-container button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+  transition: 0.1s; /* Smooth transition */
+  transition-timing-function: ease-in-out; /* Smooth timing */
+}
+
+/* Styling for the list container */
+.li-container {
+  padding: 20px; /* Add padding around the list */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center align items */
+  align-items: center; 
+  height: auto; 
+  width: 90%;
+  max-width: 400px; /* Maximum width for larger screens */
+}
+
+/* Styling for the unordered list inside the list container */
+.li-container ul {
+  padding: 20px; /* Add padding inside the list */
+  background-color: rgb(20, 20, 20); /* Dark background for list */
+  height: auto; /* Auto height */
+  width: 100%; /* Full width */
+  border-radius: 20px; /* Round the corners */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: start; /* Align items to the left */
+}
+
+/* Styling for each list item */
+.li-container li {
+  padding: 7px; /* Padding around each list item */
+  font-family: 'Times New Roman', Times, serif; /* Font style for list items */
+  margin: 2px; /* Small margin between list items */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space text and delete button */
+  width: 100%;
+}
+
+/* Styling for the text span within list items */
+.li-container span {
+  color: white; /* White text */
+  font-family: 'Times New Roman', Times, serif; /* Font style */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Styling for the delete button within list items */
+.li-container button {
+  padding: 7px; /* Add padding inside the button */
+  background-color: rgb(20, 20, 20); /* Dark background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  font-family: 'Times New Roman', Times, serif; /* Font style */
+}
+
+/* Styling for completed tasks (strikethrough effect) */
+.li-container .completed {
+  text-decoration: line-through; /* Strikethrough effect for completed tasks */
+  color: #5f5f5f; /* Grey color for completed tasks */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .form-container {
+    width: 95%; /* More width for small screens */
+  }
+
+  .form-container header {
+    font-size: 2em; /* Smaller font size for header */
+  }
+
+  .form-container input[type="text"] {
+    font-size: 1.2em; /* Smaller font size for input */
+  }
+
+  .form-container button {
+    width: 80%; /* Wider button on small screens */
+    font-size: 1.5em; /* Smaller font size for button */
+  }
+
+  .li-container {
+    width: 95%; /* More width for small screens */
+  }
+
+  .li-container ul {
+    width: 100%; /* Full width for list on small screens */
+  }
+}

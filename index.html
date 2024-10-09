@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  <!-- Specify the character encoding as UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensure proper scaling on mobile devices -->
+  <title>To Do List | Project five</title>  <!-- Page title displayed on the browser tab -->
+  <link rel="stylesheet" href="style.css">  <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Container for the form section -->
+    <div class="form-container">
+        <!-- Header for the to-do list application -->
+        <header>TO DO LIST</header>
+        <!-- Input field to add new tasks -->
+        <input type="text" id="input" placeholder="'If not now, then never!'">
+        <!-- Button to trigger the add function -->
+        <button onclick="add()">ADD</button>
+    </div>
+
+    <!-- Container for the list section -->
+    <div class="li-container">   
+        <!-- Unordered list to display the to-do items -->
+        <ul id="listcontainer"></ul>
+    </div>
+
+    <!-- JavaScript file linked for the functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
